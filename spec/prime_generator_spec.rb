@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'prime'
+require 'pry'
 describe Primes::PrimeGenerator do
   before do
     @prime_generator = Primes::PrimeGenerator.new()

@@ -1,11 +1,13 @@
 module Primes
   class PrimeGenerator
     def initialize(opts = {})
-      @num_primes = opts[:num_primes] || 10
+      @num_primes = opts[:num_primes] ? opts[:num_primes].to_i : 10
       @max_num = 100
       @primes = []
     end
-    attr_reader :num_primes, :max_num
+    attr_reader :num_primes
+    attr_writer :primes
+    attr_accessor :max_num
 
     def primes
       potential_primes = generate_primes()
@@ -15,7 +17,7 @@ module Primes
       end
       @primes = potential_primes
     end
-    
+
     private
     def increase_max
       @max_num = @max_num * 100

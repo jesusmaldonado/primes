@@ -1,11 +1,11 @@
-require 'prime_parser'
-require 'prime_generator'
+require_relative 'prime_table'
+require_relative 'prime_generator'
 
 module Primes
   class PrimeParser
     def initialize(opts = {})
       @prime_generator = Primes::PrimeGenerator.new(opts)
-      @prime_table = Primes::PrimeGenerator.new()
+      @prime_table = Primes::PrimeTable.new()
     end
 
     def print

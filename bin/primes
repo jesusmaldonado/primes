@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
+require "primes/prime_parser"
 
-require "primes"
 num_primes = ARGV[0]
 parser = Primes::PrimeParser.new(:num_primes => num_primes)
 parser.print

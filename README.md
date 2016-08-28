@@ -15,4 +15,6 @@ Then:
 ```
 $ primes 10
 ```
-You should see a multiplication table in your console.
+You should see a multiplication table in your console. Like so
+
+![image](http://imgur.com/a/Dl6xU)
